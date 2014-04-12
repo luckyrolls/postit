@@ -1,0 +1,24 @@
+<% post = @post %>
+<%= render post.categories %>
+
+
+
+<%= render 'shared/content_heading', title: post.title %>
+
+<div class="row">
+  <div class="span8 well">
+    <br>
+    <body> <%=post.description%></body>
+
+    <p>
+      <span class='quiet'>posted by</span> <%= post.user.username %>
+      <small>at  <%= post.created_at %></small
+    </p>
+  </div>
+</div>
+<h4> Comments</h4>
+<% post.comments.each do |comment|  %>
+    <p>
+      <%= comment.body %> <small> by <%= comment.user.username %> </small>
+    </p>
+<% end %>
