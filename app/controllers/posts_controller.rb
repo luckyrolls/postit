@@ -1,13 +1,13 @@
 class PostsController < ApplicationController
   def index
     @posts=Post.all
-    binding.pry
+  #  binding.pry
   end
 
 def show
   @post = Post.find(params[:id])
-  binding.pry
- # render :show
+ # binding.pry
+# render :show
 end
 
 def new
