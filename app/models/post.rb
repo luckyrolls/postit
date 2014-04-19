@@ -1,4 +1,5 @@
  class Post    < ActiveRecord::Base
+   validates :description, :url,  presence: true
    belongs_to :user
    has_many :comments
    has_many :post_categories

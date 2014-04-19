@@ -14,7 +14,7 @@
 
         span class='quiet'>posted by</span> <%= post.user.username  %>
 
-        <small>at  <%= post.created_at %></small>
+          <small>at  <%= post.created_at %></small>
         </p>
         <%= link_to("#{post.comments.size} comments", post_path(post)) %>
 
