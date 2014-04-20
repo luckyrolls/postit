@@ -26799,3 +26799,2120 @@ Processing by PostsController#index as HTML
   Rendered layouts/_navigation.html.erb (0.4ms)
   Rendered layouts/_messages.html.erb (0.2ms)
 Completed 200 OK in 303ms (Views: 263.9ms | ActiveRecord: 38.3ms)
+
+
+Started GET "/" for 10.0.2.2 at 2014-04-19 03:17:45 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (1.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  Rendered shared/_content_heading.html.erb (0.9ms)
+  [1m[35mPost Load (1.9ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mCategory Load (10.6ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 9]]
+  Rendered collection (0.0ms)
+  [1m[35mUser Load (2.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (2.4ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  [1m[35mCategory Load (1.7ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 10]]
+  Rendered collection (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (2.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 10]]
+  [1m[36mCategory Load (1.8ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 11]]
+  Rendered collection (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (2.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 11]]
+  [1m[35mCategory Load (1.5ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 12]]
+  Rendered collection (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (1.8ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 12]]
+  [1m[36mCategory Load (1.3ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 13]]
+  Rendered collection (0.0ms)
+  [1m[35mCACHE (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (1.6ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 13]]
+  [1m[35mCategory Load (1.6ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 14]]
+  Rendered collection (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (1.7ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 14]]
+  [1m[36mCategory Load (2.0ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 15]]
+  Rendered collection (0.0ms)
+  [1m[35mCACHE (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (2.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 15]]
+  [1m[35mCategory Load (1.8ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 16]]
+  Rendered collection (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (1.4ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 16]]
+  [1m[36mCategory Load (1.7ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 17]]
+  Rendered collection (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (1.9ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 17]]
+  Rendered posts/index.html.erb within layouts/application (507.8ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 1347ms (Views: 1206.3ms | ActiveRecord: 58.9ms)
+
+
+Started GET "/9" for 10.0.2.2 at 2014-04-19 03:17:56 +0000
+
+ActionController::RoutingError (No route matches [GET] "/9"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/vagrant/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (23.2ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (51.1ms)
+
+
+Started GET "/show/9" for 10.0.2.2 at 2014-04-19 03:18:05 +0000
+
+ActionController::RoutingError (No route matches [GET] "/show/9"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/vagrant/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.7ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (25.1ms)
+
+
+Started GET "/posts/9" for 10.0.2.2 at 2014-04-19 03:18:15 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+Completed 500 Internal Server Error in 1ms
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/controllers/posts_controller.rb:48:in `set_post'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.2ms)
+
+
+Started GET "/" for 10.0.2.2 at 2014-04-19 23:40:18 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  Rendered shared/_content_heading.html.erb (0.6ms)
+  [1m[35mPost Load (1.8ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mCategory Load (10.3ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 9]]
+  Rendered collection (0.0ms)
+  [1m[35mUser Load (2.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (1.9ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  [1m[35mCategory Load (1.1ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 10]]
+  Rendered collection (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (1.6ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 10]]
+  [1m[36mCategory Load (2.2ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 11]]
+  Rendered collection (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (1.9ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 11]]
+  [1m[35mCategory Load (1.9ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 12]]
+  Rendered collection (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (2.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 12]]
+  [1m[36mCategory Load (1.6ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 13]]
+  Rendered collection (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (2.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 13]]
+  [1m[35mCategory Load (1.9ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 14]]
+  Rendered collection (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (2.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 14]]
+  [1m[36mCategory Load (2.1ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 15]]
+  Rendered collection (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (3.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 15]]
+  [1m[35mCategory Load (1.3ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 16]]
+  Rendered collection (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (1.9ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 16]]
+  [1m[36mCategory Load (1.4ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 17]]
+  Rendered collection (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (1.9ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 17]]
+  Rendered posts/index.html.erb within layouts/application (474.6ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (1.2ms)
+Completed 200 OK in 1354ms (Views: 1213.3ms | ActiveRecord: 57.3ms)
+
+
+Started GET "/posts/new" for 10.0.2.2 at 2014-04-19 23:40:23 +0000
+Processing by PostsController#new as HTML
+  Rendered shared/_content_heading.html.erb (0.7ms)
+ERROR: compiling _app_views_posts__form_html_erb__990667165__626792308 RAISED /vagrant/postit/app/views/posts/_form.html.erb:23: syntax error, unexpected keyword_ensure, expecting keyword_end
+/vagrant/postit/app/views/posts/_form.html.erb:25: syntax error, unexpected end-of-input, expecting keyword_end
+Function body:           def _app_views_posts__form_html_erb__990667165__626792308(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "posts/_form";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.append=( render post.categories );@output_buffer.safe_append='
+
+
+<div class="row">
+  <div class="span8 well">
+    <br>
+    ';@output_buffer.append=( render 'shared/content_heading', title: post.title );@output_buffer.safe_append='
+
+    <body> ';@output_buffer.append=(post.description);@output_buffer.safe_append='</body>
+
+    <p>
+      <span class=\'quiet\'>posted by</span> ';@output_buffer.append=( post.user.username );@output_buffer.safe_append='
+      <small>at  ';@output_buffer.append=( post.created_at );@output_buffer.safe_append='</small
+    </p>
+  </div>
+</div>
+<h4> Comments</h4>
+'; post.comments.each do |comment|  
+@output_buffer.safe_append='    <p>
+      ';@output_buffer.append=( comment.body );@output_buffer.safe_append=' <small> by ';@output_buffer.append=( comment.user.username );@output_buffer.safe_append=' </small>
+    </p>
+';@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/template.rb:299:in `module_eval'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/template.rb:299:in `compile'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/template.rb:248:in `block in compile!'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/template.rb:236:in `synchronize'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/template.rb:236:in `compile!'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/template.rb:142:in `block in render'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.0/lib/active_support/notifications.rb:161:in `instrument'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/template.rb:141:in `render'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/renderer/partial_renderer.rb:306:in `render_partial'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/renderer/partial_renderer.rb:279:in `block in render'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/renderer/partial_renderer.rb:278:in `render'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:47:in `render_partial'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/helpers/rendering_helper.rb:27:in `render'
+/vagrant/postit/app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb__880015453__626823478'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/template.rb:143:in `block in render'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.0/lib/active_support/notifications.rb:161:in `instrument'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/template.rb:141:in `render'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:17:in `render'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:42:in `render_template'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:23:in `render'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:127:in `_render_template'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:97:in `render'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.0/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+/home/vagrant/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.0/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activerecord-4.0.0/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/abstract_controller/base.rb:189:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:413:in `_run__726476598__process_action__callbacks'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activerecord-4.0.0/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/abstract_controller/base.rb:136:in `process'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:44:in `process'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_controller/metal.rb:195:in `dispatch'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_controller/metal.rb:231:in `block in action'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:80:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:48:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:71:in `block in call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:59:in `each'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:59:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:655:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/flash.rb:241:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activerecord-4.0.0/lib/active_record/query_cache.rb:36:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activerecord-4.0.0/lib/active_record/migration.rb:369:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:373:in `_run__691565325__call__callbacks'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.0/lib/rails/rack/logger.rb:38:in `call_app'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.0/lib/rails/rack/logger.rb:21:in `block in call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:25:in `tagged'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:67:in `tagged'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.0/lib/rails/rack/logger.rb:21:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/quiet_assets-1.0.2/lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.0/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/static.rb:64:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.0/lib/rails/engine.rb:511:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.0/lib/rails/application.rb:97:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+/home/vagrant/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+/home/vagrant/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+/home/vagrant/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered posts/_form.html.erb (15.0ms)
+  Rendered posts/new.html.erb within layouts/application (82.3ms)
+Completed 500 Internal Server Error in 162ms
+
+ActionView::Template::Error (/vagrant/postit/app/views/posts/_form.html.erb:23: syntax error, unexpected keyword_ensure, expecting keyword_end
+/vagrant/postit/app/views/posts/_form.html.erb:25: syntax error, unexpected end-of-input, expecting keyword_end):
+    20:       <%= comment.body %> <small> by <%= comment.user.username %> </small>
+    21:     </p>
+  app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb__880015453__626823478'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (19.7ms)
+
+
+Started GET "/posts/new" for 10.0.2.2 at 2014-04-19 23:40:24 +0000
+Processing by PostsController#new as HTML
+  Rendered shared/_content_heading.html.erb (0.1ms)
+ERROR: compiling _app_views_posts__form_html_erb__990667165__627611938 RAISED /vagrant/postit/app/views/posts/_form.html.erb:23: syntax error, unexpected keyword_ensure, expecting keyword_end
+/vagrant/postit/app/views/posts/_form.html.erb:25: syntax error, unexpected end-of-input, expecting keyword_end
+Function body:           def _app_views_posts__form_html_erb__990667165__627611938(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "posts/_form";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.append=( render post.categories );@output_buffer.safe_append='
+
+
+<div class="row">
+  <div class="span8 well">
+    <br>
+    ';@output_buffer.append=( render 'shared/content_heading', title: post.title );@output_buffer.safe_append='
+
+    <body> ';@output_buffer.append=(post.description);@output_buffer.safe_append='</body>
+
+    <p>
+      <span class=\'quiet\'>posted by</span> ';@output_buffer.append=( post.user.username );@output_buffer.safe_append='
+      <small>at  ';@output_buffer.append=( post.created_at );@output_buffer.safe_append='</small
+    </p>
+  </div>
+</div>
+<h4> Comments</h4>
+'; post.comments.each do |comment|  
+@output_buffer.safe_append='    <p>
+      ';@output_buffer.append=( comment.body );@output_buffer.safe_append=' <small> by ';@output_buffer.append=( comment.user.username );@output_buffer.safe_append=' </small>
+    </p>
+';@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/template.rb:299:in `module_eval'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/template.rb:299:in `compile'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/template.rb:248:in `block in compile!'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/template.rb:236:in `synchronize'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/template.rb:236:in `compile!'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/template.rb:142:in `block in render'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.0/lib/active_support/notifications.rb:161:in `instrument'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/template.rb:141:in `render'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/renderer/partial_renderer.rb:306:in `render_partial'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/renderer/partial_renderer.rb:279:in `block in render'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/renderer/partial_renderer.rb:278:in `render'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:47:in `render_partial'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/helpers/rendering_helper.rb:27:in `render'
+/vagrant/postit/app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb__880015453__627628988'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/template.rb:143:in `block in render'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.0/lib/active_support/notifications.rb:161:in `instrument'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/template.rb:141:in `render'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:17:in `render'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:42:in `render_template'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:23:in `render'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:127:in `_render_template'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:97:in `render'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.0/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+/home/vagrant/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.0/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activerecord-4.0.0/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/abstract_controller/base.rb:189:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:413:in `_run__726476598__process_action__callbacks'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activerecord-4.0.0/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/abstract_controller/base.rb:136:in `process'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:44:in `process'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_controller/metal.rb:195:in `dispatch'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_controller/metal.rb:231:in `block in action'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:80:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:48:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:71:in `block in call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:59:in `each'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:59:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:655:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/flash.rb:241:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activerecord-4.0.0/lib/active_record/query_cache.rb:36:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activerecord-4.0.0/lib/active_record/migration.rb:369:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:373:in `_run__691565325__call__callbacks'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.0/lib/rails/rack/logger.rb:38:in `call_app'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.0/lib/rails/rack/logger.rb:21:in `block in call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:25:in `tagged'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:67:in `tagged'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.0/lib/rails/rack/logger.rb:21:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/quiet_assets-1.0.2/lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.0/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/static.rb:64:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.0/lib/rails/engine.rb:511:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.0/lib/rails/application.rb:97:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+/home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+/home/vagrant/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+/home/vagrant/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+/home/vagrant/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered posts/_form.html.erb (10.5ms)
+  Rendered posts/new.html.erb within layouts/application (58.7ms)
+Completed 500 Internal Server Error in 136ms
+
+ActionView::Template::Error (/vagrant/postit/app/views/posts/_form.html.erb:23: syntax error, unexpected keyword_ensure, expecting keyword_end
+/vagrant/postit/app/views/posts/_form.html.erb:25: syntax error, unexpected end-of-input, expecting keyword_end):
+    20:       <%= comment.body %> <small> by <%= comment.user.username %> </small>
+    21:     </p>
+  app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb__880015453__627628988'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (47.9ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.2ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (66.6ms)
+
+
+Started GET "/posts/new" for 10.0.2.2 at 2014-04-19 23:41:14 +0000
+Processing by PostsController#new as HTML
+  Rendered shared/_content_heading.html.erb (0.1ms)
+  Rendered posts/_form.html.erb (37.0ms)
+  Rendered posts/new.html.erb within layouts/application (90.4ms)
+Completed 500 Internal Server Error in 164ms
+
+ActionView::Template::Error (undefined local variable or method `post' for #<#<Class:0xaf60144>:0xa4a0894>):
+    1: <%= render post.categories %>
+    2: 
+    3: 
+    4: <div class="row">
+  app/views/posts/_form.html.erb:1:in `_app_views_posts__form_html_erb__990667165_86622620'
+  app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb__880015453__627628988'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.9ms)
+
+
+Started GET "/posts/new" for 10.0.2.2 at 2014-04-19 23:42:09 +0000
+Processing by PostsController#new as HTML
+  Rendered shared/_content_heading.html.erb (0.2ms)
+  Rendered posts/_form.html.erb (32.1ms)
+  Rendered posts/new.html.erb within layouts/application (80.6ms)
+Completed 500 Internal Server Error in 148ms
+
+ActionView::Template::Error (undefined local variable or method `post' for #<#<Class:0xaf60144>:0xaf4518c>):
+    4: <div class="row">
+    5:   <div class="span8 well">
+    6:     <br>
+    7:     <%= render 'shared/content_heading', title: post.title %>
+    8: 
+    9:     <body> <%=post.description%></body>
+   10: 
+  app/views/posts/_form.html.erb:7:in `_app_views_posts__form_html_erb__990667165_91900530'
+  app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb__880015453__627628988'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (18.3ms)
+
+
+Started GET "/posts/new" for 10.0.2.2 at 2014-04-19 23:43:14 +0000
+Processing by PostsController#new as HTML
+  Rendered shared/_content_heading.html.erb (0.1ms)
+  Rendered posts/_form.html.erb (93.4ms)
+  Rendered posts/new.html.erb within layouts/application (140.9ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 285ms (Views: 283.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 10.0.2.2 at 2014-04-19 23:44:03 +0000
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"p4jy1OUSqmhWxgWwD/Zm3eH+pDS9qZ+fAJz5NMe3PSM=", "post"=>{"title"=>"This ", "url"=>"is ", "description"=>"yet another mfer"}, "commit"=>"Update"}
+  [1m[35mUser Load (1.7ms)[0m  SELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.4ms)[0m  INSERT INTO "posts" ("created_at", "description", "title", "updated_at", "url", "user_id") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Sat, 19 Apr 2014 23:44:03 UTC +00:00], ["description", "yet another mfer"], ["title", "This "], ["updated_at", Sat, 19 Apr 2014 23:44:03 UTC +00:00], ["url", "is "], ["user_id", 6]]
+  [1m[36m (3.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 23ms (ActiveRecord: 10.9ms)
+
+
+Started GET "/posts" for 10.0.2.2 at 2014-04-19 23:44:03 +0000
+Processing by PostsController#index as HTML
+  Rendered shared/_content_heading.html.erb (0.1ms)
+  [1m[35mPost Load (2.1ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mCategory Load (2.0ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 9]]
+  Rendered collection (0.0ms)
+  [1m[35mUser Load (1.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (2.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  [1m[35mCategory Load (2.4ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 10]]
+  Rendered collection (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (2.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 10]]
+  [1m[36mCategory Load (2.1ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 11]]
+  Rendered collection (0.0ms)
+  [1m[35mCACHE (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (1.7ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 11]]
+  [1m[35mCategory Load (2.2ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 12]]
+  Rendered collection (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (2.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 12]]
+  [1m[36mCategory Load (2.5ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 13]]
+  Rendered collection (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (2.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 13]]
+  [1m[35mCategory Load (1.6ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 14]]
+  Rendered collection (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (1.5ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 14]]
+  [1m[36mCategory Load (1.9ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 15]]
+  Rendered collection (0.0ms)
+  [1m[35mCACHE (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (2.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 15]]
+  [1m[35mCategory Load (1.7ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 16]]
+  Rendered collection (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (1.9ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 16]]
+  [1m[36mCategory Load (1.9ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 17]]
+  Rendered collection (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (2.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 17]]
+  [1m[35mCategory Load (2.5ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 18]]
+  Rendered collection (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (1.8ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 18]]
+  Rendered posts/index.html.erb within layouts/application (154.2ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 309ms (Views: 263.0ms | ActiveRecord: 44.7ms)
+
+
+Started GET "/posts/9/edit" for 10.0.2.2 at 2014-04-19 23:44:19 +0000
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"9"}
+Completed 500 Internal Server Error in 1ms
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/controllers/posts_controller.rb:48:in `set_post'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.3ms)
+
+
+Started GET "/posts/9/" for 10.0.2.2 at 2014-04-19 23:45:14 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+Completed 500 Internal Server Error in 1ms
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/controllers/posts_controller.rb:48:in `set_post'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.8ms)
+
+
+Started GET "/posts/9" for 10.0.2.2 at 2014-04-19 23:45:20 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+Completed 500 Internal Server Error in 1ms
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/controllers/posts_controller.rb:48:in `set_post'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.2ms)
+
+
+Started GET "/posts" for 10.0.2.2 at 2014-04-19 23:45:29 +0000
+Processing by PostsController#index as HTML
+  Rendered shared/_content_heading.html.erb (0.1ms)
+  [1m[36mPost Load (1.9ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mCategory Load (1.3ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 9]]
+  Rendered collection (0.0ms)
+  [1m[36mUser Load (2.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (1.7ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 9]]
+  [1m[36mCategory Load (2.0ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 10]]
+  Rendered collection (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (2.1ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 10]]
+  [1m[35mCategory Load (1.7ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 11]]
+  Rendered collection (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (1.9ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 11]]
+  [1m[36mCategory Load (1.2ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 12]]
+  Rendered collection (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (2.1ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 12]]
+  [1m[35mCategory Load (1.9ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 13]]
+  Rendered collection (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (2.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 13]]
+  [1m[36mCategory Load (1.3ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 14]]
+  Rendered collection (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (1.5ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 14]]
+  [1m[35mCategory Load (2.2ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 15]]
+  Rendered collection (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (1.9ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 15]]
+  [1m[36mCategory Load (2.0ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 16]]
+  Rendered collection (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (1.4ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 16]]
+  [1m[35mCategory Load (1.8ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 17]]
+  Rendered collection (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (1.8ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 17]]
+  [1m[36mCategory Load (2.2ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 18]]
+  Rendered collection (0.0ms)
+  [1m[35mCACHE (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (2.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 18]]
+  Rendered posts/index.html.erb within layouts/application (146.4ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 293ms (Views: 250.8ms | ActiveRecord: 40.9ms)
+
+
+Started GET "/posts/9" for 10.0.2.2 at 2014-04-19 23:45:34 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+Completed 500 Internal Server Error in 1ms
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/controllers/posts_controller.rb:48:in `set_post'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.7ms)
+
+
+Started GET "/posts/9" for 10.0.2.2 at 2014-04-19 23:47:11 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+Completed 500 Internal Server Error in 1ms
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/controllers/posts_controller.rb:48:in `set_post'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.9ms)
+
+
+Started GET "/posts/9" for 10.0.2.2 at 2014-04-19 23:47:42 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+Completed 500 Internal Server Error in 1ms
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/controllers/posts_controller.rb:48:in `set_post'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.2ms)
+
+
+Started GET "/posts/9" for 10.0.2.2 at 2014-04-19 23:47:51 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+Completed 500 Internal Server Error in 1ms
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/controllers/posts_controller.rb:48:in `set_post'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.5ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.7ms)
+
+
+Started GET "/posts/9" for 10.0.2.2 at 2014-04-19 23:50:47 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+Completed 500 Internal Server Error in 1ms
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/controllers/posts_controller.rb:48:in `set_post'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.2ms)
+
+
+Started GET "/posts/9" for 10.0.2.2 at 2014-04-19 23:50:57 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+Completed 500 Internal Server Error in 1ms
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/controllers/posts_controller.rb:48:in `set_post'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (30.6ms)
+
+
+Started GET "/posts/9" for 10.0.2.2 at 2014-04-19 23:52:50 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (1.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mPost Load (2.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "9"]]
+  Rendered posts/_form.html.erb (50.1ms)
+  Rendered posts/show.html.erb within layouts/application (97.7ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 1048ms (Views: 929.6ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/posts/9" for 10.0.2.2 at 2014-04-19 23:52:57 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (2.6ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", "9"]]
+  Rendered posts/_form.html.erb (4.7ms)
+  Rendered posts/show.html.erb within layouts/application (27.9ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 166ms (Views: 160.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/posts/9/edit" for 10.0.2.2 at 2014-04-19 23:53:09 +0000
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mPost Load (2.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "9"]]
+  Rendered shared/_content_heading.html.erb (0.6ms)
+  Rendered posts/_form.html.erb (3.9ms)
+  Rendered posts/edit.html.erb within layouts/application (51.0ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 183ms (Views: 177.6ms | ActiveRecord: 2.0ms)
+
+
+Started PATCH "/posts/9" for 10.0.2.2 at 2014-04-19 23:53:20 +0000
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"p4jy1OUSqmhWxgWwD/Zm3eH+pDS9qZ+fAJz5NMe3PSM=", "post"=>{"title"=>"Keep playing that rick and roll", "url"=>" ", "description"=>"This is the description with another update and another "}, "commit"=>"Update", "id"=>"9"}
+  [1m[36mPost Load (2.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", "9"]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered shared/_content_heading.html.erb (0.1ms)
+  Rendered posts/_form.html.erb (4.2ms)
+  Rendered posts/edit.html.erb within layouts/application (54.7ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 211ms (Views: 199.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2014-04-19 23:53:26 +0000
+Processing by PostsController#index as HTML
+  Rendered shared/_content_heading.html.erb (0.1ms)
+  [1m[35mPost Load (1.8ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mCategory Load (10.2ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 9]]
+  Rendered collection (0.1ms)
+  [1m[35mUser Load (2.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (2.1ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  [1m[35mCategory Load (2.0ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 10]]
+  Rendered collection (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (2.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 10]]
+  [1m[36mCategory Load (1.9ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 11]]
+  Rendered collection (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (1.7ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 11]]
+  [1m[35mCategory Load (2.1ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 12]]
+  Rendered collection (0.0ms)
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (2.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 12]]
+  [1m[36mCategory Load (1.3ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 13]]
+  Rendered collection (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (1.9ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 13]]
+  [1m[35mCategory Load (2.2ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 14]]
+  Rendered collection (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (1.7ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 14]]
+  [1m[36mCategory Load (2.4ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 15]]
+  Rendered collection (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (2.4ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 15]]
+  [1m[35mCategory Load (1.4ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 16]]
+  Rendered collection (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (1.5ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 16]]
+  [1m[36mCategory Load (1.6ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 17]]
+  Rendered collection (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (2.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 17]]
+  [1m[35mCategory Load (2.0ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 18]]
+  Rendered collection (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (1.5ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 18]]
+  Rendered posts/index.html.erb within layouts/application (468.3ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 616ms (Views: 555.3ms | ActiveRecord: 59.8ms)
+
+
+Started GET "/www.dailynews.com" for 10.0.2.2 at 2014-04-19 23:53:30 +0000
+
+ActionController::RoutingError (No route matches [GET] "/www.dailynews.com"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/vagrant/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.3ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (35.7ms)
+
+
+Started PATCH "/posts/9" for 10.0.2.2 at 2014-04-19 23:53:41 +0000
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"p4jy1OUSqmhWxgWwD/Zm3eH+pDS9qZ+fAJz5NMe3PSM=", "post"=>{"title"=>"Keep playing that rick and roll", "url"=>" ", "description"=>"This is the description with another update and another "}, "commit"=>"Update", "id"=>"9"}
+  [1m[36mPost Load (2.5ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", "9"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  Rendered shared/_content_heading.html.erb (0.2ms)
+  Rendered posts/_form.html.erb (3.8ms)
+  Rendered posts/edit.html.erb within layouts/application (57.4ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 272ms (Views: 207.6ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/posts/10" for 10.0.2.2 at 2014-04-19 23:53:47 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mPost Load (1.8ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "10"]]
+  Rendered posts/_form.html.erb (3.2ms)
+  Rendered posts/show.html.erb within layouts/application (24.2ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 178ms (Views: 172.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/posts/11" for 10.0.2.2 at 2014-04-19 23:53:52 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mPost Load (2.5ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", "11"]]
+  Rendered posts/_form.html.erb (2.6ms)
+  Rendered posts/show.html.erb within layouts/application (26.4ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 175ms (Views: 169.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/posts/11/edit" for 10.0.2.2 at 2014-04-19 23:54:31 +0000
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mPost Load (1.8ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "11"]]
+  Rendered shared/_content_heading.html.erb (0.1ms)
+  Rendered posts/_form.html.erb (3.0ms)
+  Rendered posts/edit.html.erb within layouts/application (46.9ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 183ms (Views: 179.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/posts/new" for 10.0.2.2 at 2014-04-19 23:55:30 +0000
+Processing by PostsController#new as HTML
+  Rendered shared/_content_heading.html.erb (1.1ms)
+  Rendered posts/_form.html.erb (6.2ms)
+  Rendered posts/new.html.erb within layouts/application (88.3ms)
+  Rendered layouts/_navigation.html.erb (1.6ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 260ms (Views: 259.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 10.0.2.2 at 2014-04-19 23:55:33 +0000
+Processing by PostsController#new as HTML
+  Rendered shared/_content_heading.html.erb (0.2ms)
+  Rendered posts/_form.html.erb (3.5ms)
+  Rendered posts/new.html.erb within layouts/application (68.3ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 247ms (Views: 245.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/9" for 10.0.2.2 at 2014-04-19 23:55:43 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (2.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", "9"]]
+  Rendered posts/_form.html.erb (5.0ms)
+  Rendered posts/show.html.erb within layouts/application (24.2ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 176ms (Views: 169.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/posts/9" for 10.0.2.2 at 2014-04-20 00:18:25 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mPost Load (1.4ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "9"]]
+  Rendered posts/_form.html.erb (5.2ms)
+  Rendered posts/show.html.erb within layouts/application (28.3ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 226ms (Views: 174.1ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/posts/9" for 10.0.2.2 at 2014-04-20 00:18:31 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (1.8ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", "9"]]
+  Rendered posts/_form.html.erb (3.5ms)
+  Rendered posts/show.html.erb within layouts/application (28.0ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 177ms (Views: 172.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/posts/9" for 10.0.2.2 at 2014-04-20 00:18:45 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mPost Load (1.7ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "9"]]
+  [1m[36mCategory Load (1.7ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 9]]
+  Rendered collection (0.0ms)
+  Rendered shared/_content_heading.html.erb (0.2ms)
+  [1m[35mUser Load (4.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mComment Load (2.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  Rendered posts/show.html.erb within layouts/application (281.7ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 420ms (Views: 400.7ms | ActiveRecord: 17.2ms)
+
+
+Started GET "/posts/9" for 10.0.2.2 at 2014-04-20 00:26:44 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mPost Load (1.7ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "9"]]
+  [1m[36mCategory Load (1.7ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 9]]
+  Rendered collection (0.0ms)
+  Rendered shared/_content_heading.html.erb (0.1ms)
+  [1m[35mUser Load (1.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mComment Load (1.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  Rendered posts/show.html.erb within layouts/application (50.9ms)
+  Rendered layouts/_navigation.html.erb (44.4ms)
+Completed 500 Internal Server Error in 223ms
+
+ActionView::Template::Error (undefined local variable or method `new_category_path' for #<#<Class:0x9d6d298>:0xb61bbfc8>):
+     8: 
+     9: </ul>
+    10: <li>
+    11:   <%= link_to 'New Category', new_category_path %>
+    12: </li>
+  app/views/layouts/_navigation.html.erb:11:in `_app_views_layouts__navigation_html_erb___459738843__619966978'
+  app/views/layouts/application.html.erb:19:in `_app_views_layouts_application_html_erb__299935725_77416670'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.4ms)
+
+
+Started GET "/posts/9" for 10.0.2.2 at 2014-04-20 00:29:25 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mPost Load (2.3ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "9"]]
+  [1m[36mCategory Load (1.3ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 9]]
+  Rendered collection (0.0ms)
+  Rendered shared/_content_heading.html.erb (0.1ms)
+  [1m[35mUser Load (1.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mComment Load (1.5ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  Rendered posts/show.html.erb within layouts/application (40.2ms)
+  Rendered layouts/_navigation.html.erb (79.0ms)
+Completed 500 Internal Server Error in 243ms
+
+ActionView::Template::Error (undefined local variable or method `new_category_path' for #<#<Class:0x9d6d298>:0xb56bb8a8>):
+     8: 
+     9: </ul>
+    10: <li>
+    11:   <%= link_to 'New Category', new_category_path %>
+    12: </li>
+  app/views/layouts/_navigation.html.erb:11:in `_app_views_layouts__navigation_html_erb___459738843__619966978'
+  app/views/layouts/application.html.erb:19:in `_app_views_layouts_application_html_erb__299935725_77416670'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.1ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (20.2ms)
+
+
+Started GET "/posts/9" for 10.0.2.2 at 2014-04-20 00:29:30 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mPost Load (2.5ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "9"]]
+  [1m[36mCategory Load (2.1ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 9]]
+  Rendered collection (0.0ms)
+  Rendered shared/_content_heading.html.erb (0.3ms)
+  [1m[35mUser Load (2.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mComment Load (2.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  Rendered posts/show.html.erb within layouts/application (42.7ms)
+  Rendered layouts/_navigation.html.erb (43.9ms)
+Completed 500 Internal Server Error in 232ms
+
+ActionView::Template::Error (undefined local variable or method `new_category_path' for #<#<Class:0x9d6d298>:0x934ea3c>):
+     8: 
+     9: </ul>
+    10: <li>
+    11:   <%= link_to 'New Category', new_category_path %>
+    12: </li>
+  app/views/layouts/_navigation.html.erb:11:in `_app_views_layouts__navigation_html_erb___459738843__619966978'
+  app/views/layouts/application.html.erb:19:in `_app_views_layouts_application_html_erb__299935725_77416670'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (17.8ms)
+
+
+Started GET "/posts/9" for 10.0.2.2 at 2014-04-20 00:30:38 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mPost Load (1.7ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "9"]]
+  [1m[36mCategory Load (1.4ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 9]]
+  Rendered collection (0.0ms)
+  Rendered shared/_content_heading.html.erb (0.1ms)
+  [1m[35mUser Load (2.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mComment Load (1.5ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  Rendered posts/show.html.erb within layouts/application (180.5ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 419ms (Views: 308.4ms | ActiveRecord: 19.0ms)
+
+
+Started GET "/posts/9" for 10.0.2.2 at 2014-04-20 02:50:57 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mPost Load (2.2ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "9"]]
+  [1m[36mCategory Load (9.5ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 9]]
+  Rendered collection (0.1ms)
+  Rendered shared/_content_heading.html.erb (0.6ms)
+  [1m[35mUser Load (2.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mComment Load (1.8ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  Rendered posts/show.html.erb within layouts/application (345.3ms)
+  Rendered layouts/_navigation.html.erb (46.8ms)
+Completed 500 Internal Server Error in 1254ms
+
+ActionView::Template::Error (undefined local variable or method `new_category_path' for #<#<Class:0x9ddbe28>:0x9ddb810>):
+     8: 
+     9: </ul>
+    10: <li>
+    11:   <%= link_to 'New Category', new_category_path %>
+    12: </li>
+  app/views/layouts/_navigation.html.erb:11:in `_app_views_layouts__navigation_html_erb__1003079835__621163278'
+  app/views/layouts/application.html.erb:19:in `_app_views_layouts_application_html_erb___45201049__618979968'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.4ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (23.3ms)
+
+
+Started GET "/posts/9" for 10.0.2.2 at 2014-04-20 02:51:25 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mPost Load (2.2ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "9"]]
+  [1m[36mCategory Load (2.1ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 9]]
+  Rendered collection (0.0ms)
+  Rendered shared/_content_heading.html.erb (0.1ms)
+  [1m[35mUser Load (1.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mComment Load (2.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  Rendered posts/show.html.erb within layouts/application (170.4ms)
+  Rendered layouts/_navigation.html.erb (31.4ms)
+Completed 500 Internal Server Error in 411ms
+
+ActionView::Template::Error (undefined local variable or method `new_category_path' for #<#<Class:0x8fd075c>:0x8fe6e58>):
+     8: 
+     9: </ul>
+    10: <li>
+    11:   <%= link_to 'New Category', new_category_path %>
+    12: </li>
+  app/views/layouts/_navigation.html.erb:11:in `_app_views_layouts__navigation_html_erb__1003079835__621163278'
+  app/views/layouts/application.html.erb:19:in `_app_views_layouts_application_html_erb___45201049__618979968'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.5ms)
+
+
+Started GET "/posts/9" for 10.0.2.2 at 2014-04-20 02:51:28 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mPost Load (1.9ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "9"]]
+  [1m[36mCategory Load (1.7ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 9]]
+  Rendered collection (0.0ms)
+  Rendered shared/_content_heading.html.erb (0.1ms)
+  [1m[35mUser Load (1.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mComment Load (1.5ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  Rendered posts/show.html.erb within layouts/application (36.2ms)
+  Rendered layouts/_navigation.html.erb (34.0ms)
+Completed 500 Internal Server Error in 191ms
+
+ActionView::Template::Error (undefined local variable or method `new_category_path' for #<#<Class:0x8fd075c>:0xb6374a40>):
+     8: 
+     9: </ul>
+    10: <li>
+    11:   <%= link_to 'New Category', new_category_path %>
+    12: </li>
+  app/views/layouts/_navigation.html.erb:11:in `_app_views_layouts__navigation_html_erb__1003079835__621163278'
+  app/views/layouts/application.html.erb:19:in `_app_views_layouts_application_html_erb___45201049__618979968'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.9ms)
+
+
+Started GET "/posts/9" for 10.0.2.2 at 2014-04-20 02:51:45 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mPost Load (1.6ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "9"]]
+  [1m[36mCategory Load (11.5ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 9]]
+  Rendered collection (0.1ms)
+  Rendered shared/_content_heading.html.erb (1.0ms)
+  [1m[35mUser Load (2.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mComment Load (1.6ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  Rendered posts/show.html.erb within layouts/application (334.0ms)
+  Rendered layouts/_navigation.html.erb (41.8ms)
+Completed 500 Internal Server Error in 1132ms
+
+ActionView::Template::Error (undefined local variable or method `new_category_path' for #<#<Class:0xac7040c>:0xac77ce8>):
+     8: 
+     9: </ul>
+    10: <li>
+    11:   <%= link_to 'New Category', new_category_path %>
+    12: </li>
+  app/views/layouts/_navigation.html.erb:11:in `_app_views_layouts__navigation_html_erb___1066155315__622721218'
+  app/views/layouts/application.html.erb:19:in `_app_views_layouts_application_html_erb__365126984_90443680'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.6ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (20.2ms)
+
+
+Started GET "/post" for 10.0.2.2 at 2014-04-20 02:51:51 +0000
+
+ActionController::RoutingError (No route matches [GET] "/post"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/vagrant/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (25.2ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (51.9ms)
+
+
+Started GET "/posts" for 10.0.2.2 at 2014-04-20 02:57:12 +0000
+Processing by PostsController#index as HTML
+  Rendered shared/_content_heading.html.erb (0.1ms)
+  [1m[35mPost Load (2.1ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mCategory Load (1.8ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 9]]
+  Rendered collection (0.0ms)
+  [1m[35mUser Load (1.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (1.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  [1m[35mCategory Load (1.4ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 10]]
+  Rendered collection (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (2.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 10]]
+  [1m[36mCategory Load (2.0ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 11]]
+  Rendered collection (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (1.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 11]]
+  [1m[35mCategory Load (2.2ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 12]]
+  Rendered collection (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (1.8ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 12]]
+  [1m[36mCategory Load (1.9ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 13]]
+  Rendered collection (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (1.6ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 13]]
+  [1m[35mCategory Load (1.7ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 14]]
+  Rendered collection (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (1.9ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 14]]
+  [1m[36mCategory Load (2.0ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 15]]
+  Rendered collection (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (1.4ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 15]]
+  [1m[35mCategory Load (2.0ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 16]]
+  Rendered collection (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (2.5ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 16]]
+  [1m[36mCategory Load (1.9ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 17]]
+  Rendered collection (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (1.9ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 17]]
+  [1m[35mCategory Load (1.9ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 18]]
+  Rendered collection (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (1.8ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 18]]
+  Rendered posts/index.html.erb within layouts/application (195.0ms)
+  Rendered layouts/_navigation.html.erb (33.0ms)
+Completed 500 Internal Server Error in 335ms
+
+ActionView::Template::Error (undefined local variable or method `new_category_path' for #<#<Class:0xac7040c>:0xb58040fc>):
+     8: 
+     9: </ul>
+    10: <li>
+    11:   <%= link_to 'New Category', new_category_path %>
+    12: </li>
+  app/views/layouts/_navigation.html.erb:11:in `_app_views_layouts__navigation_html_erb___1066155315__622721218'
+  app/views/layouts/application.html.erb:19:in `_app_views_layouts_application_html_erb__365126984_90443680'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (19.9ms)
+
+
+Started GET "/posts" for 10.0.2.2 at 2014-04-20 02:58:02 +0000
+Processing by PostsController#index as HTML
+  Rendered shared/_content_heading.html.erb (0.1ms)
+  [1m[36mPost Load (1.6ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mCategory Load (1.6ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 9]]
+  Rendered collection (0.0ms)
+  [1m[36mUser Load (1.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (2.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 9]]
+  [1m[36mCategory Load (2.0ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 10]]
+  Rendered collection (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (1.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 10]]
+  [1m[35mCategory Load (2.0ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 11]]
+  Rendered collection (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (1.9ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 11]]
+  [1m[36mCategory Load (2.6ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 12]]
+  Rendered collection (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (1.4ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 12]]
+  [1m[35mCategory Load (1.4ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 13]]
+  Rendered collection (0.0ms)
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (1.7ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 13]]
+  [1m[36mCategory Load (2.0ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 14]]
+  Rendered collection (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (2.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 14]]
+  [1m[35mCategory Load (2.1ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 15]]
+  Rendered collection (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (2.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 15]]
+  [1m[36mCategory Load (1.5ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 16]]
+  Rendered collection (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (1.5ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 16]]
+  [1m[35mCategory Load (1.8ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 17]]
+  Rendered collection (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (2.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 17]]
+  [1m[36mCategory Load (2.0ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 18]]
+  Rendered collection (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (2.5ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 18]]
+  Rendered posts/index.html.erb within layouts/application (141.3ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 283ms (Views: 241.6ms | ActiveRecord: 40.8ms)
+
+
+Started GET "/posts" for 10.0.2.2 at 2014-04-20 02:58:38 +0000
+Processing by PostsController#index as HTML
+  Rendered shared/_content_heading.html.erb (0.2ms)
+  [1m[35mPost Load (1.3ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mCategory Load (2.4ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 9]]
+  Rendered collection (0.0ms)
+  [1m[35mUser Load (1.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (1.9ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  [1m[35mCategory Load (2.2ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 10]]
+  Rendered collection (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (1.6ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 10]]
+  [1m[36mCategory Load (2.3ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 11]]
+  Rendered collection (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (2.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 11]]
+  [1m[35mCategory Load (1.8ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 12]]
+  Rendered collection (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (1.9ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 12]]
+  [1m[36mCategory Load (2.3ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 13]]
+  Rendered collection (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (2.4ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 13]]
+  [1m[35mCategory Load (1.4ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 14]]
+  Rendered collection (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (1.5ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 14]]
+  [1m[36mCategory Load (2.9ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 15]]
+  Rendered collection (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (2.7ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 15]]
+  [1m[35mCategory Load (1.4ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 16]]
+  Rendered collection (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (2.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 16]]
+  [1m[36mCategory Load (1.8ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 17]]
+  Rendered collection (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (2.1ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 17]]
+  [1m[35mCategory Load (1.5ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 18]]
+  Rendered collection (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (2.4ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 18]]
+  Rendered posts/index.html.erb within layouts/application (145.1ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 291ms (Views: 245.8ms | ActiveRecord: 44.2ms)
+
+
+Started GET "/posts" for 10.0.2.2 at 2014-04-20 02:58:43 +0000
+Processing by PostsController#index as HTML
+  Rendered shared/_content_heading.html.erb (0.1ms)
+  [1m[36mPost Load (1.9ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mCategory Load (1.8ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 9]]
+  Rendered collection (0.0ms)
+  [1m[36mUser Load (1.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (2.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 9]]
+  [1m[36mCategory Load (1.6ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 10]]
+  Rendered collection (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (1.8ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 10]]
+  [1m[35mCategory Load (2.0ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 11]]
+  Rendered collection (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (1.9ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 11]]
+  [1m[36mCategory Load (1.5ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 12]]
+  Rendered collection (0.0ms)
+  [1m[35mCACHE (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (1.5ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 12]]
+  [1m[35mCategory Load (1.2ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 13]]
+  Rendered collection (0.0ms)
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (1.9ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 13]]
+  [1m[36mCategory Load (1.3ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 14]]
+  Rendered collection (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (2.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 14]]
+  [1m[35mCategory Load (2.6ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 15]]
+  Rendered collection (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (1.7ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 15]]
+  [1m[36mCategory Load (1.4ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 16]]
+  Rendered collection (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (2.4ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 16]]
+  [1m[35mCategory Load (1.1ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 17]]
+  Rendered collection (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (2.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 17]]
+  [1m[36mCategory Load (1.9ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 18]]
+  Rendered collection (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (2.1ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 18]]
+  Rendered posts/index.html.erb within layouts/application (188.0ms)
+  Rendered layouts/_navigation.html.erb (40.2ms)
+Completed 500 Internal Server Error in 348ms
+
+ActionView::Template::Error (undefined local variable or method `new_category_path' for #<#<Class:0xac7040c>:0xb5235b6c>):
+     8: 
+     9: 
+    10: <li>
+    11:   <%= link_to 'New Category', new_category_path %>
+    12: </li>
+    13: 
+    14: </ul>
+  app/views/layouts/_navigation.html.erb:11:in `_app_views_layouts__navigation_html_erb___1066155315_89403350'
+  app/views/layouts/application.html.erb:19:in `_app_views_layouts_application_html_erb__365126984_90443680'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.5ms)
+
+
+Started GET "/posts" for 10.0.2.2 at 2014-04-20 02:59:17 +0000
+
+SyntaxError (/vagrant/postit/config/routes.rb:5: syntax error, unexpected end-of-input, expecting keyword_end):
+  activesupport (4.0.0) lib/active_support/dependencies.rb:222:in `load'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:222:in `block in load'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:213:in `load_dependency'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:222:in `load'
+  railties (4.0.0) lib/rails/application/routes_reloader.rb:40:in `block in load_paths'
+  railties (4.0.0) lib/rails/application/routes_reloader.rb:40:in `each'
+  railties (4.0.0) lib/rails/application/routes_reloader.rb:40:in `load_paths'
+  railties (4.0.0) lib/rails/application/routes_reloader.rb:16:in `reload!'
+  railties (4.0.0) lib/rails/application/routes_reloader.rb:26:in `block in updater'
+  activesupport (4.0.0) lib/active_support/file_update_checker.rb:75:in `call'
+  activesupport (4.0.0) lib/active_support/file_update_checker.rb:75:in `execute'
+  railties (4.0.0) lib/rails/application/routes_reloader.rb:7:in `execute'
+  railties (4.0.0) lib/rails/application/finisher.rb:81:in `block (2 levels) in <module:Finisher>'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:397:in `_run__387398935__prepare__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:74:in `prepare!'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:62:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/vagrant/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.3ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.3ms)
+
+
+Started GET "/posts" for 10.0.2.2 at 2014-04-20 02:59:41 +0000
+Processing by PostsController#index as HTML
+  Rendered shared/_content_heading.html.erb (0.1ms)
+  [1m[35mPost Load (1.8ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mCategory Load (2.1ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 9]]
+  Rendered collection (0.0ms)
+  [1m[35mUser Load (2.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (2.1ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  [1m[35mCategory Load (2.0ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 10]]
+  Rendered collection (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (2.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 10]]
+  [1m[36mCategory Load (1.5ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 11]]
+  Rendered collection (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (2.6ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 11]]
+  [1m[35mCategory Load (2.0ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 12]]
+  Rendered collection (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (1.8ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 12]]
+  [1m[36mCategory Load (2.5ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 13]]
+  Rendered collection (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (1.9ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 13]]
+  [1m[35mCategory Load (1.9ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 14]]
+  Rendered collection (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (1.8ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 14]]
+  [1m[36mCategory Load (1.9ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 15]]
+  Rendered collection (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (2.4ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 15]]
+  [1m[35mCategory Load (52.3ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 16]]
+  Rendered collection (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (1.6ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 16]]
+  [1m[36mCategory Load (1.7ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?[0m  [["post_id", 17]]
+  Rendered collection (0.0ms)
+  [1m[35mCACHE (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (1.9ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 17]]
+  [1m[35mCategory Load (1.7ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "post_categories" ON "categories"."id" = "post_categories"."category_id" WHERE "post_categories"."post_id" = ?  [["post_id", 18]]
+  Rendered collection (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (3.5ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 18]]
+  Rendered posts/index.html.erb within layouts/application (374.2ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 560ms (Views: 429.8ms | ActiveRecord: 108.2ms)
+
+
+Started GET "/categories/new" for 10.0.2.2 at 2014-04-20 03:00:51 +0000
+
+LoadError (Unable to autoload constant CategoriesController, expected /vagrant/postit/app/controllers/categories_controller.rb to define it):
+  activesupport (4.0.0) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:183:in `const_missing'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:534:in `get'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:565:in `constantize'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__664066527__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/vagrant/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.5ms)
+
+
+Started GET "/posts/9/edit" for 10.0.2.2 at 2014-04-20 03:00:58 +0000
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (2.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", "9"]]
+  Rendered shared/_content_heading.html.erb (0.1ms)
+  Rendered posts/_form.html.erb (29.6ms)
+  Rendered posts/edit.html.erb within layouts/application (75.7ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 275ms (Views: 219.3ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/categories/new" for 10.0.2.2 at 2014-04-20 03:01:02 +0000
+
+RuntimeError (Circular dependency detected while autoloading constant CategoriesController):
+  activesupport (4.0.0) lib/active_support/dependencies.rb:460:in `load_missing_constant'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:183:in `const_missing'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:534:in `get'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:565:in `constantize'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__664066527__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/vagrant/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.6ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.9ms)
+
+
+Started GET "/categories/new" for 10.0.2.2 at 2014-04-20 03:01:02 +0000
+
+RuntimeError (Circular dependency detected while autoloading constant CategoriesController):
+  activesupport (4.0.0) lib/active_support/dependencies.rb:460:in `load_missing_constant'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:183:in `const_missing'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:534:in `get'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:565:in `constantize'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__664066527__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/vagrant/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.7ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.6ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.1ms)
+
+
+Started GET "/categories/1" for 10.0.2.2 at 2014-04-20 03:01:50 +0000
+
+RuntimeError (Circular dependency detected while autoloading constant CategoriesController):
+  activesupport (4.0.0) lib/active_support/dependencies.rb:460:in `load_missing_constant'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:183:in `const_missing'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:534:in `get'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:565:in `constantize'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__664066527__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/vagrant/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.4ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.3ms)
+
+
+Started GET "/categories/1" for 10.0.2.2 at 2014-04-20 03:05:34 +0000
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 34ms
+
+ActionView::MissingTemplate (Missing template categories/show, application/show with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/vagrant/postit/app/views"
+):
+  actionpack (4.0.0) lib/action_view/path_set.rb:46:in `find'
+  actionpack (4.0.0) lib/action_view/lookup_context.rb:115:in `find'
+  actionpack (4.0.0) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:35:in `determine_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.0) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/vagrant/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:403:in `_run__679400027__process_action__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__664066527__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/vagrant/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.6ms)
+
+
+Started GET "/categories/new" for 10.0.2.2 at 2014-04-20 03:05:41 +0000
+Processing by CategoriesController#new as HTML
+  Rendered categories/new.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 132ms (Views: 130.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories/new" for 10.0.2.2 at 2014-04-20 03:06:33 +0000
+Processing by CategoriesController#new as HTML
+  Rendered categories/new.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 167ms (Views: 141.4ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/categories/new" for 10.0.2.2 at 2014-04-20 03:09:12 +0000
+Processing by CategoriesController#new as HTML
+  Rendered categories/new.html.erb within layouts/application (13.0ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 172ms (Views: 170.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/categories" for 10.0.2.2 at 2014-04-20 03:09:23 +0000
+
+AbstractController::ActionNotFound (The action 'create' could not be found for CategoriesController):
+  actionpack (4.0.0) lib/abstract_controller/base.rb:131:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__664066527__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/vagrant/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.6ms)
+
+
+Started POST "/categories" for 10.0.2.2 at 2014-04-20 03:11:30 +0000
+Processing by CategoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"p4jy1OUSqmhWxgWwD/Zm3eH+pDS9qZ+fAJz5NMe3PSM=", "category"=>{"name"=>"Phony"}, "commit"=>"Create"}
+Completed 500 Internal Server Error in 30ms
+
+NameError (undefined local variable or method `post_params' for #<CategoriesController:0xb66105ec>):
+  app/controllers/categories_controller.rb:15:in `create'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (75.2ms)
+

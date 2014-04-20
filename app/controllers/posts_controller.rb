@@ -45,7 +45,7 @@ end
     end
   end
 
- def set_post post
+ def set_post
   @post = Post.find params[:id]
  end
 end
