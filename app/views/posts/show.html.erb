@@ -4,7 +4,6 @@
 
 
 
-
 <div class="row">
   <div class="span8 well">
     <br>
@@ -18,9 +17,19 @@
     </p>
   </div>
 </div>
+<%= form_for [@post, @comment] do |com|  %>
+    <div class='control-group'>
+      <%= com.label  :body %>
+      <%= com.text_area :body %><br />
+      <%= com.submit "Say it!", class: "btn btn=primary" %>
+<% end %>
+</div>
+
 <h4> Comments</h4>
 <% post.comments.each do |comment|  %>
     <p>
       <%= comment.body %> <small> by <%= comment.user.username %> </small>
     </p>
 <% end %>
+
+

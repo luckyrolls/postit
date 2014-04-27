@@ -6,8 +6,8 @@ class PostsController < ApplicationController
   end
 
 def show
- # binding.pry
-# render :show
+ @comment = Comment.new
+# binding.pry
 end
 
 
@@ -19,12 +19,12 @@ end
     @post=Post.new
 end
   def create
-#    binding.pry
+  binding.pry
   @post = Post.new post_params
     @post.user = User.first
 
     if @post.save
-      flash.now[:notice] = " The dude was saved! "
+      flash[:notice] = " The dude was saved! "
       redirect_to posts_path
     else
       flash.now[:notice] = "Invalid Dude"
@@ -45,7 +45,7 @@ end
     end
   end
 
- def set_post post
+ def set_post
   @post = Post.find params[:id]
  end
 end
